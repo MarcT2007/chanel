@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narisana SVG oblika na Canvas</title>
+
+    <script>
+        window.onload = function() {
+            // Dobi platno
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+
+            // Nastavi debelino in barvo črte ter barvo zapolnitve
+            context.lineWidth = 5;
+            context.strokeStyle = "black";
+            context.fillStyle = "black";
+			context.lineJoin = 'round'; 
+
+            // Začnemo novo pot
+            context.beginPath();
+            // --- Oblika Chanel ---
+            context.beginPath();
+
+			context.moveTo(161.27,560.69);
+			context.bezierCurveTo(161,561,205,642,285,659);
+			context.bezierCurveTo(376,686,451,640,451,640);
+			context.bezierCurveTo(451,640,526,687,618,656);
+			context.bezierCurveTo(698,637,739,560,739,560);
+			context.lineTo(681,526);
+			context.bezierCurveTo(681,526,656,575,598,592);
+			context.bezierCurveTo(547,607,511,591,511,591);
+			context.bezierCurveTo(510.53,591.06,533.10,562.69,544.86,529.74);
+			context.bezierCurveTo(562.06,494.28,560.27,451.63,560.27,451.63);
+			context.bezierCurveTo(560.27,451.63,562.59,412.42,546.94,379.58);
+			context.bezierCurveTo(536.52,343.08,509.61,312.62,509.61,312.62);
+			context.bezierCurveTo(509.61,312.62,555.81,297.20,601.17,313.88);
+			context.bezierCurveTo(651.74,328.48,681.53,378.53,681.53,378.56);
+			context.lineTo(738.81,343.62);
+			context.bezierCurveTo(738.81,343.62,696.58,265.91,610.03,245.06);
+			context.bezierCurveTo(526.09,220.55,450.50,264.71,450.50,264.71);
+			context.bezierCurveTo(450.50,264.71,377.49,221.07,293.02,244.01);
+			context.bezierCurveTo(205.95,263.83,161.35,343.83,161.35,343.83);
+			context.lineTo(219.54,378.70);
+			context.bezierCurveTo(219.54,378.70,248.18,330.04,299.80,313.88);
+			context.bezierCurveTo(342.92,297.31,390.54,312.97,390.54,312.97);
+			context.bezierCurveTo(390.54,312.97,364.98,343.08,352.46,379.58);
+			context.bezierCurveTo(338.39,414.51,339.60,452.26,339.60,452.26);
+			context.bezierCurveTo(339.60,452.26,338.83,488.38,350.90,521.40);
+			context.bezierCurveTo(364.14,557.63,390.33,591.06,390.33,591.06);
+			context.bezierCurveTo(390.33,591.06,344.12,608.47,299.80,590.22);
+			context.bezierCurveTo(251.31,577.19,219.54,526.45,219.54,526.45);
+			context.lineTo(161.27,560.69);
+			context.closePath();
+
+            // --- Noranja luknja ---
+            context.moveTo(482.29,504.19);
+            context.bezierCurveTo(472.38,533.39, 450.39,554.57, 450.39,554.57);
+            context.bezierCurveTo(450.39,554.57, 432.76,539.12, 417.64,506.80);
+            context.bezierCurveTo(407.43,482.48, 407.34,452.01, 407.34,452.01);
+            context.bezierCurveTo(407.34,452.01, 408.97,421.31, 419.72,395.74);
+            context.bezierCurveTo(430.54,370.03, 450.47,349.45, 450.47,349.45);
+            context.bezierCurveTo(450.47,349.45, 470.53,371.70, 480.21,395.22);
+            context.bezierCurveTo(491.46,422.56, 492.59,451.75, 492.59,451.75);
+            context.bezierCurveTo(492.59,451.75, 493.76,480.73, 482.29,504.19);
+            context.closePath();
+
+            // Zapolni in nariši obris
+            context.fill();
+            context.stroke();
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Vstavljanje platna -->
+    <canvas id="canvas" width="800" height="700"></canvas>
+</body>
+</html>
