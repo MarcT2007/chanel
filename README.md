@@ -1,5 +1,5 @@
 # Projekt: Replika logotipa Chanel (SVG in HTML Canvas)
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/27f1a6f5-5953-454c-b2bb-a68a4ccc0d23" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/27f1a6f5-5953-454c-b2bb-a68a4ccc0d23" />
 
 ## Opis projekta
 Pri projektu sem izdelala **repliko logotipa Chanel** z uporabo dveh različnih spletnih tehnologij, in sicer **SVG** in **HTML Canvas**. Namen projekta je bil spoznati razlike med vektorskim in programskim izrisom grafike ter njuno uporabo v spletnih straneh. 
