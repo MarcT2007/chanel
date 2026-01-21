@@ -7,9 +7,76 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+	<!-- Krivulja znak -->
+	<script>
+        window.onload = function() {
+            // Dobi platno
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+
+            // Nastavi debelino in barvo črte ter barvo zapolnitve
+			context.scale(0.15, 0.15);          // 50% manjša (ali 2, 0.8...)
+            context.lineWidth = 5;
+            context.strokeStyle = "black";
+            context.fillStyle = "black";
+			context.lineJoin = 'round'; 
+
+            // Začnemo novo pot
+            context.beginPath();
+            // --- Oblika Chanel ---
+            context.beginPath();
+
+			context.moveTo(161.27,560.69);
+			context.bezierCurveTo(161,561,205,642,285,659);
+			context.bezierCurveTo(376,686,451,640,451,640);
+			context.bezierCurveTo(451,640,526,687,618,656);
+			context.bezierCurveTo(698,637,739,560,739,560);
+			context.lineTo(681,526);
+			context.bezierCurveTo(681,526,656,575,598,592);
+			context.bezierCurveTo(547,607,511,591,511,591);
+			context.bezierCurveTo(510.53,591.06,533.10,562.69,544.86,529.74);
+			context.bezierCurveTo(562.06,494.28,560.27,451.63,560.27,451.63);
+			context.bezierCurveTo(560.27,451.63,562.59,412.42,546.94,379.58);
+			context.bezierCurveTo(536.52,343.08,509.61,312.62,509.61,312.62);
+			context.bezierCurveTo(509.61,312.62,555.81,297.20,601.17,313.88);
+			context.bezierCurveTo(651.74,328.48,681.53,378.53,681.53,378.56);
+			context.lineTo(738.81,343.62);
+			context.bezierCurveTo(738.81,343.62,696.58,265.91,610.03,245.06);
+			context.bezierCurveTo(526.09,220.55,450.50,264.71,450.50,264.71);
+			context.bezierCurveTo(450.50,264.71,377.49,221.07,293.02,244.01);
+			context.bezierCurveTo(205.95,263.83,161.35,343.83,161.35,343.83);
+			context.lineTo(219.54,378.70);
+			context.bezierCurveTo(219.54,378.70,248.18,330.04,299.80,313.88);
+			context.bezierCurveTo(342.92,297.31,390.54,312.97,390.54,312.97);
+			context.bezierCurveTo(390.54,312.97,364.98,343.08,352.46,379.58);
+			context.bezierCurveTo(338.39,414.51,339.60,452.26,339.60,452.26);
+			context.bezierCurveTo(339.60,452.26,338.83,488.38,350.90,521.40);
+			context.bezierCurveTo(364.14,557.63,390.33,591.06,390.33,591.06);
+			context.bezierCurveTo(390.33,591.06,344.12,608.47,299.80,590.22);
+			context.bezierCurveTo(251.31,577.19,219.54,526.45,219.54,526.45);
+			context.lineTo(161.27,560.69);
+			context.closePath();
+
+            // --- Noranja luknja ---
+            context.moveTo(482.29,504.19);
+            context.bezierCurveTo(472.38,533.39, 450.39,554.57, 450.39,554.57);
+            context.bezierCurveTo(450.39,554.57, 432.76,539.12, 417.64,506.80);
+            context.bezierCurveTo(407.43,482.48, 407.34,452.01, 407.34,452.01);
+            context.bezierCurveTo(407.34,452.01, 408.97,421.31, 419.72,395.74);
+            context.bezierCurveTo(430.54,370.03, 450.47,349.45, 450.47,349.45);
+            context.bezierCurveTo(450.47,349.45, 470.53,371.70, 480.21,395.22);
+            context.bezierCurveTo(491.46,422.56, 492.59,451.75, 492.59,451.75);
+            context.bezierCurveTo(492.59,451.75, 493.76,480.73, 482.29,504.19);
+            context.closePath();
+
+            // Zapolni in nariši obris
+            context.fill();
+            context.stroke();
+        }
+    </script>
 
     <!-- Favicon -->
-    <link href="chanel-main/Chanel/img/favicon.ico" rel="icon">
+    <link href="chanel-main/slike/chanel.jpg" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -135,10 +202,10 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="chanel-main/Chanel/shop.html" class="nav-item nav-link">Shop</a>
-                            <a href="chanel-main/Chanel/cart.html" class="nav-item nav-link">Shop Cart</a>
-                            <a href="chanel-main/Chanel/checkout.html" class="nav-item nav-link">Checkout</a>
-                            <a href="chanel-main/Chanel/contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="" class="nav-item nav-link">Shop</a>
+                            <a href="" class="nav-item nav-link">Shop Cart</a>
+                            <a href="" class="nav-item nav-link">Checkout</a>
+                            <a href="" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0">
                             <a href="" class="nav-item nav-link">Login</a>
@@ -225,7 +292,7 @@
                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                     <p class="text-right">15 Products</p>
                     <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="chanel-main/slike/men's.png" alt="" style="height:400px;width:400px;">
+                        <img class="img-fluid" src="chanel-main/slike/men.jpg" alt="" style="height:400px;width:400px;">
                     </a>
                     <h5 class="font-weight-semi-bold m-0">Men's dresses</h5>
                 </div>
@@ -630,28 +697,31 @@
             <div class="col">
                 <div class="owl-carousel vendor-carousel">
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-1.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/2.svg"/>
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-2.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/4.svg"/>
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-3.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/3.svg"/>
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-4.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/5.svg"/>
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-5.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/6.svg"/>
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-6.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/8.svg"/>
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-7.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/7.svg"/>
                     </div>
                     <div class="vendor-item border p-4">
-                        <img src="chanel-main/Chanel/img/vendor-8.jpg" alt="">
+                        <img src="chanel-main/Chanelsvg/9.svg"/>
+                    </div>
+					<div class="vendor-item border p-4">
+                        <img src="chanel-main/Chanelsvg/1.svg"/>
                     </div>
                 </div>
             </div>
@@ -665,7 +735,7 @@
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <a href="" class="text-decoration-none">
-					<img src="chanel-main/Chanelsvg/1.svg" style="height:80px;width:80px;"/>
+				<canvas id="canvas" width="125" height="101"></canvas>
                     <h1 class="mb-4 display-5 font-weight-semi-bold">CHANEL</h1>
                 </a>
                 <p>Chanel is an independent company that believes in the freedom of creation, cultivates human potential and acts to have a positive impact in the world.</p>
@@ -679,22 +749,22 @@
                         <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
-                            <a class="text-dark" href="chanel-main/Chanel/contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href=""><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-5">
                         <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                            <a class="text-dark mb-2" href="chanel-main/Chanel/checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
-                            <a class="text-dark" href="chanel-main/Chanel/contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href=""><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href=""><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-5">
@@ -748,7 +818,6 @@
 </body>
 
 </html>
-
 
 
 
