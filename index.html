@@ -10,37 +10,15 @@
 	<style>
 		.vendor-item {
     position: relative;
-    height: 200px;
     text-align: center;
     cursor: pointer;
-    overflow: hidden;
+    transition: filter 0.3s ease;
+    filter: brightness(0.5); /* zatemnjeno */
 }
 
-/* SLika je skrita */
-.vendor-item img {
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    max-width: 100%;
-}
-
-/* Napis – vedno na sredini */
-.vendor-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    transition: color 0.4s ease;
-    z-index: 2;
-}
-
-/* HOVER */
-.vendor-item:hover img {
-    opacity: 1;
-}
-
-.vendor-item:hover .vendor-title {
-    color: inherit; /* uporabi barvo iz style="" */
+/* ko greš z miško čez */
+.vendor-item:hover {
+    filter: brightness(1);
 }
 	</style>
 	<!-- Krivulja znak -->
@@ -731,42 +709,42 @@
     <div class="container-fluid py-5">
         <div class="row px-xl-5">
             <div class="col">
-                <div class="owl-carousel vendor-carousel" class="vendor-item border p-4">
+                <div class="owl-carousel vendor-carousel" class="vendor-item, vendor-item:hover">
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/2.svg"/>
-						<h1 class="vendor-title" style="color:#2C3E50 ; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#2C3E50 ; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/4.svg"/>
-						<h1 class="vendor-title" style="color:#9B59B6; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#9B59B6; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/3.svg"/>
-						<h1 class="vendor-title" style="color:#3498DB; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#3498DB; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/5.svg"/>
-						<h1 class="vendor-title" style="color:#1ABC9C; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#1ABC9C; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/6.svg"/>
-						<h1 class="vendor-title" style="color:#F39C12; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#F39C12; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/8.svg"/>
-						<h1 class="vendor-title" style="color:#F1C40F; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#F1C40F; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/7.svg"/>
-						<h1 class="vendor-title" style="color:#E74C3C; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#E74C3C; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/9.svg"/>
-						<h1 class="vendor-title" style="color:#16213E; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:#16213E; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
 					<div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/1.svg"/>
-						<h1 class="vendor-title" style="color:black; text-align:center; font-weight: bold;">CHANEL</h1>
+						<h1 style="color:black; text-align:center; font-weight: bold;">CHANEL</h1>
                     </div>
                 </div>
             </div>
@@ -863,6 +841,7 @@
 </body>
 
 </html>
+
 
 
 
