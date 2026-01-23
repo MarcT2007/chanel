@@ -16,6 +16,13 @@
 		.vendor-item:hover img {
   			  opacity: 1;
 		}
+		.vendor-title {
+   			 opacity: 0;
+   			 transition: opacity 0.3s ease;
+		}
+		.vendor-item:hover .vendor-title {
+  			  opacity: 1;
+		}
 	</style>
 	<!-- Krivulja znak -->
 	<script>
@@ -705,7 +712,7 @@
     <div class="container-fluid py-5">
         <div class="row px-xl-5">
             <div class="col">
-                <div class="owl-carousel vendor-carousel" class="vendor-item img, vendor-item:hover img">
+                <div class="owl-carousel vendor-carousel" class="vendor-item img, vendor-item:hover img, vendor-title, vendor-item:hover .vendor-title ">
                     <div class="vendor-item border p-4">
                         <img src="chanel-main/Chanelsvg/2.svg"/>
 						<h1 style="color:#2C3E50 ; text-align:center; font-weight: bold;">CHANEL</h1>
@@ -837,6 +844,7 @@
 </body>
 
 </html>
+
 
 
 
